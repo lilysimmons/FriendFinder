@@ -25,8 +25,6 @@ module.exports = function (app) {
  
     user.scores = user.scores.map(function(str){return parseInt(str)})
 
-
-    // var bestFriendValue = 0;
     var minDiff = 9999;
     var bestMatch = {};
 
