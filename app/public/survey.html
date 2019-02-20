@@ -187,7 +187,6 @@
         $.post("/api/friends", newFriend,
             function (match) {
 
-                // If a table is available... tell user they are booked.
                 if (match) {
                     alert("Welcome to the friend-zone.");
                     $("#match-text").text(match.name);
@@ -197,7 +196,7 @@
 
                 }
                 else {
-                    $("#bestMatch").text("Sorry, no friends for you, loser.");
+                    $("#match-text").text("Sorry, no friends for you, loser.");
                 };
 
             }
