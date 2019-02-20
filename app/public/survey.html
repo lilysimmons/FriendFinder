@@ -137,11 +137,6 @@
 
     <!-- modal goes here -->
 
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Launch demo modal
-  </button> -->
-
     <!-- Modal -->
     <div class="modal fade" id="bestMatch" tabindex="-1" role="dialog" aria-labelledby="best-match" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -153,7 +148,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p id="match-text"></p>
+                    <h3 id="match-text"></h3>
                     <img class='img-fluid' scr="" alt ="no image available">
                 </div>
                 <div class="modal-footer">
@@ -204,17 +199,6 @@
                 else {
                     $("#bestMatch").text("Sorry, no friends for you, loser.");
                 };
-
-                // // If a table is available... tell user they on the waiting list.
-                // else {
-                //   alert("Sorry you are on the wait list");
-                // }
-
-                // // Clear the form when submitting
-                // $("#reserve-name").val("");
-                // $("#reserve-phone").val("");
-                // $("#reserve-email").val("");
-                // $("#reserve-unique-id").val("");
 
             }
         );
